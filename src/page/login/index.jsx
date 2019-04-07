@@ -20,7 +20,7 @@ import {setItem} from "../../storage/storage";
              if(result.status===0){
                  message.success('登录成功',2)
                  setItem(result.data);
-                 this.props.history.replace('/')
+                 this.props.history.replace('/home')
              }else {
                  message.error(result.msg,2)
              }

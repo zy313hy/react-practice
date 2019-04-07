@@ -55,7 +55,7 @@ export default class Admin extends Component{
                     < Route path="/home" component={Home} />
                     < Route path="/category" component={Class} />
                     < Route path="/product" component={Store} />
-                    </Content>
+                </Content>
                     <Footer style={{ textAlign: 'center' }}>
                         Ant Design ©2018 Created by Ant UED
                     </Footer>
