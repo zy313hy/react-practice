@@ -2,13 +2,13 @@ import React, { Component } from 'react';
 import {
     Layout, Menu,
 } from 'antd';
-import {Route} from 'react-router-dom'
+import {Route,Switch,Redirect} from 'react-router-dom'
 
 import {getItem} from '../../storage/storage';
 import memory from '../../storage/memory'
 import LeftNav from '../../component/leftnav/index'
 import Home from '../home/index'
-import Class from '../class/index'
+import Class from '../class/products'
 import Store from '../store/index'
 import './index.less'
 import HeaderContent from '../../component/header-cotent'
@@ -52,10 +52,11 @@ export default class Admin extends Component{
                         <HeaderContent/>
                     </Header>
                     <Content style={{ margin: '20px 16px' }}>
+
                     < Route path="/home" component={Home} />
-                    < Route path="/category" component={Class} />
-                    < Route path="/product" component={Store} />
-                </Content>
+                    < Route path="/category" component={Store} />
+                    < Route path="/product" component={Class} />
+                    </Content>
                     <Footer style={{ textAlign: 'center' }}>
                         Ant Design ©2018 Created by Ant UED
                     </Footer>

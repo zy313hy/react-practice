@@ -51,14 +51,7 @@ export default class Store extends Component{
             </div>
         }
     ];
-    // showUpdateCategoryNameModal=(dataList)=>{
-    //     return()=>{
-    //         this.setState({
-    //             dataList
-    //         })
-    //         this.changeModal('isShowUpdateCategoryNameModal', true)();
-    //     }
-    // }
+
     componentDidMount(){
         this.getDataLists('0')
     }
@@ -116,11 +109,9 @@ export default class Store extends Component{
         });
     }
     addCategoryCancel = (e) => {
-        console.log(e);
         this.setState({
             isShowAddCategoryModal: false,
         })
-
     };
     //修改分类名称
 

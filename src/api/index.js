@@ -25,3 +25,5 @@ export const reqDataList=(parentId)=>ajax(prefix+'/manage/category/list',{parent
 export  const  reqAddDataList=(parentId,categoryName)=>ajax(prefix+'/manage/category/add',{parentId,categoryName},'POST')
 
 export const reqUpdateCategoryName = (categoryId, categoryName) => ajax(prefix + '/manage/category/update', {categoryId, categoryName}, 'POST');
+
+export const reqGetProduct=(pageNum,pageSize)=>ajax(prefix+'/manage/product/list',{pageNum,pageSize});
